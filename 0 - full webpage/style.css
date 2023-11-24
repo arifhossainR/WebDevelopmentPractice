@@ -1,0 +1,304 @@
+/* default css */
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.text-center{
+    text-align: center;
+    margin-top: 50px;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.fix-width{
+    width: 1260px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Header css */
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: royalblue;
+}
+.header .header-left {
+    width: 30%;
+    float: left;
+}
+.header .header-right {
+    width: 70%;
+    float: right;
+}
+.header .header-left a{
+    font-size: 50px;
+    color: white;
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+
+    transition: .2s;
+}
+.header .header-left a:hover{
+    transform: scale(1.1);
+    color: darkgrey;
+}
+.header .header-right ul{
+    list-style: none;
+}
+.header .header-right ul li {
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.header-right ul li i{
+    margin-left: 5px;
+}
+.header .header-right ul li a {
+    font-size: 22px;
+    padding: 20px 30px;
+    display: block;
+    color: white;
+    border-right: 1px solid white;
+}
+.header .header-right ul li:first-child a{
+    border-left: 1px solid white;
+}
+.header .header-right ul li:hover > a{
+    background-color: rgb(42, 73, 165);
+    color: rgb(175, 169, 170);
+}
+
+
+/* Dropdown menu design */
+
+.header .fix-width .header-right ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background-color: royalblue;
+    text-align: center;
+    border-top: 1px solid white;
+
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header .fix-width .header-right ul li ul li{
+    display: block;
+    margin-left: 0px;
+    border-bottom: 1px solid white;
+}
+.header .fix-width .header-right ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* banner part design */
+.banner{
+    background: url(https://smartslider3.com/wp-content/uploads/2019/01/photo_slideshow.jpg) no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    padding: 200px 0;
+}
+.banner .fix-width .banner-caption{
+    position: relative;
+}
+.banner .fix-width .banner-caption h2{
+    color: red;
+    background-color: silver;
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 25px;
+    position: absolute;
+    top: -150px;
+    left: 250px;
+    text-shadow: 3px 2px 3px black;
+    box-shadow: 6px 4px 5px 2px black;
+}
+.banner .fix-width .banner-caption p{
+    font-size: 20px;
+    color: yellow;
+    background-color: silver;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid chocolate;
+    box-shadow: 5px 5px 14px 5px green;
+    position: absolute;
+    left: 250px;
+    top: -50px;
+}
+
+/* about us */
+
+.about{
+    margin: 50px 0;
+}
+
+.about h2{
+    display: inline-block;
+    color: purple;
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 10px black;
+}
+.about p{
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* service part design */
+
+.services-part{
+    margin-bottom: 50px;
+}
+
+.services-part .service-item{
+    float: left;
+    width: 31.3%;
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    padding: 5px;
+    transition: .2s;
+}
+.services-part .service-item:hover{
+    transform: scale(1.1);
+}
+.services-part .service-item span{
+
+    font-size: 30px;
+    color: green;
+    padding: 10px;
+    background-color: lime;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px 0px black;
+    transition: .1s;
+}
+.services-part .service-item span:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.services-part .service-item h2{
+    display: block;
+    margin: 10px 0;
+    color: purple;
+    text-shadow: 1px 1px 10px black;
+}
+.services-part .service-item h2:hover{
+    color: rgb(214, 47, 214);
+}
+
+
+/* Container part */
+
+.container .container-left{
+    float: left;
+    width: 70%;
+}
+.container .container-left img{
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: whitesmoke;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.container .container-left p{
+    font-size: 20px;
+}
+.container .container-right{
+    float: right;
+    width: 25%;
+}
+.container .container-right h2{
+    font-size: 30px;
+    display: inline-block;
+    padding: 5px;
+    background-color: silver;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.container .container-right h2:hover{
+    color: rgb(120, 120, 120);
+}
+.container .container-right ul{
+    list-style: none;
+}
+.container .container-right ul li{
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 2px;
+}
+.container .container-right ul li:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+/* footer part design */
+
+.footer{
+    background-color: purple;
+    margin-bottom: 10px;
+}
+.footer-left{
+    float: left;
+    width: 40%;
+    line-height: 45px;
+}
+.footer-left h3{
+    color: white;
+}
+.footer-left span{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+.footer-right{
+    float: right;
+    width: 60%;
+}
+.footer-right ul{
+    text-align: right;
+}
+.footer-right ul li{
+    display: inline-block;
+    text-align: center;
+}
+.footer-right ul li a{
+    color: white;
+    background-color: limegreen;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.footer-right ul li a:hover{
+    background-color: rgb(32, 107, 32);
+    color: black;
+}

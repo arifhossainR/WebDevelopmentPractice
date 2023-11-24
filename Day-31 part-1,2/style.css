@@ -1,0 +1,381 @@
+/* Default css */
+
+body,h1,h2,h3,h4,h5,h6,i,a{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* Header section style */
+
+.mainmenu-bar .mobicon{
+    background: #6495ed;
+    color: #ffffff;
+    padding: 10px 11px;
+    border-radius: 8px;
+}
+.mainmenu-bar .navbar-brand{
+    font-size: 22px;
+    font-weight: 500;
+}
+.bttn{
+    padding: 8px 30px;
+}
+.bttn:hover{
+    box-shadow: 1px 1px 20px 3px rgba(98, 120, 223, 0.7);
+}
+.navbar{
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+}
+
+/* Slider section */
+.slide-sec{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
+    padding: 200px 0px;
+    position: relative;
+    z-index: 1;
+
+    margin-top: 88px;
+}
+.slide-sec::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.slider-main .bttn:hover{
+    background: #fff !important;
+    color: #6495ed !important;
+    border: 1px solid #6495ed;
+}
+.slider-text h4{
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    color: #fff !important;
+}
+.slider-text h1{
+    margin-bottom: 3rem;
+    color: #fff !important;
+}
+.slider-main input{
+    padding: 15px 10px;
+}
+
+/* Counter section part */
+.countSection .display-3{
+    font-weight: 500;
+}
+.countSection .text-muted{
+    font-size: 22px;
+}
+.countSectionItem{
+    border-right: 2px solid black;
+}
+.countSection .col-lg-3:last-child .countSectionItem{
+    border-right: none;
+}
+
+/* About Section */
+.aboutSection{
+    background: #f7f9ff;
+}
+.aboutSection h1{
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+.aboutSection p{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 35px;
+}
+.aboutSection .col-lg-8{
+    margin-top: 120px;
+}
+
+/* Benefit section part */
+.imgSection{
+    padding-bottom: 40px;
+}
+.benefitSectionHeader p{
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.benefit-item{
+    box-shadow: 1px 1px 20px 10px #e8e9ec;
+    margin-bottom: 20px;
+}
+.benefit-item:hover{
+    box-shadow: 1px 1px 20px 10px #d4d6dd;
+}
+.benefitLeft{
+    height: 250px;
+}
+.benefitLeft{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
+}
+.benefitRight{
+    width: 60%;
+    margin-top: 50px;
+}
+.benefitLeft img{
+    height: 100% !important;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -70px;
+}
+.benefitRight h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.benefitRight p{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/* img Section part */
+.img-itemPart a{
+    position: relative;
+    display: inline-block;
+}
+.img-itemPart a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(100, 149, 237, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.img-itemPart:hover a::before{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Price Section part */
+.priceSection{
+    background: #f7f9ff;
+}
+.priceHeader h1{
+    font-weight: 400;
+    font-size: 55px;
+}
+.priceHeader p{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 25px 0px;
+}
+.priceTable{
+    width: 500px;
+    background: #fff;
+    padding-left: 40px;
+    box-shadow: 1px 1px 20px 10px #d4d6dd;
+}
+.priceTable p{
+    font-size: 20px;
+    padding: 15px 0px;
+}
+.priceTable ul{
+    list-style-type: none;
+}
+.priceTable ul li{
+    margin-left: -30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #777;
+}
+.priceTable ul li:first-child{
+    padding-top: 10px;
+}
+.priceTable ul li i{
+    color: #6495ed;
+    padding-right: 15px;
+    font-size: 25px;
+}
+.priceButton a{
+    box-shadow: 2px 1px 15px 0px rgb(100, 149, 237, 0.5);
+    color: #6495ed;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+.priceTable:hover .priceButton a{
+    color: #fff;
+    background: #6495ed !important;
+}
+
+/* Feedback section part */
+.feedback h5{
+    font-weight: 300;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.feedback h1{
+    font-weight: 400;
+    font-size: 45px;
+}
+.feedback i{
+    font-size: 90px;
+    opacity: 0.2;
+    margin-top: -15px;
+}
+.feedback p{
+    font-size: 20px;
+    width: 850px;
+    margin: auto;
+}
+.userDetSec{
+    display: inline-block;
+    margin-left: 40px !important;
+}
+.userDetSec img{
+    width: 80px;
+}
+.userAddress{
+    width: 200px;
+    padding: 15px 0px;
+}
+.userAddress h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.userAddress h5{
+    font-size: 20px;
+}
+
+/* About Section */
+.about-section{
+    background: #f7f9ff;
+    padding: 80px;
+}
+.about-section h1{
+    font-weight: 400;
+}
+.aboutHeader{
+    padding-bottom: 120px;
+}
+.aboutHeader p{
+    font-size: 20px;
+}
+
+/* About Item part */
+.card img{
+    width: 130px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: 20px;
+}
+.card{
+    box-shadow: 2px 1px 20px 0px rgb(100, 149, 237, 0.5);
+    transition: 0.2s;
+}
+.card-title{
+    font-size: 22px;
+}
+.card-subtitle{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.card-text{
+    font-size: 15px;
+}
+.card:hover{
+    box-shadow: 2px 1px 25px 0px rgb(100, 149, 237, 0.7);
+}
+.card-body a{
+    transition: 0.3s;
+}
+.card-body a:hover{
+    color: #fff;
+    background: #000;
+}
+
+/* Form section */
+.FormHeader h1{
+    font-weight: 400;
+    padding: 30px 0px;
+}
+.Form-content-div .card input,textarea,a{
+    margin: 10px 0px;
+}
+.Form-content-div .card .form-control{
+    border: none;
+    box-shadow: 2px 1px 20px 0px rgb(100, 149, 237, 0.5);
+}
+.Form-content-div .card a:hover{
+    background: #fff !important;
+    color: #6495ed !important;
+    box-shadow: 2px 1px 20px 0px rgb(100, 149, 237, 0.5);
+}
+
+
+.Form-content-caption p{
+    font-size: 25px;
+}
+.Form-content-caption h1{
+    font-size: 45px;
+    font-weight: 400;
+}
+.Form-content-caption ul{
+    list-style-type: none;
+    padding: 20px 0px;
+}
+.Form-content-caption ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.Form-content-caption ul li a{
+    padding: 15px 40px;
+}
+.Form-content-caption ul li i{
+    margin-right: 7px;
+}
+.Form-content-caption .playstore{
+    box-shadow: 0px 0px 25px 0px #5ba533;
+    background: #5ba533;
+    color: #fff;
+}
+
+.Form-content-caption .appstore:hover{
+    background: #5ba533 !important;
+    color: #fff !important;
+    box-shadow: 0px 0px 25px 0px #5ba533;
+}
+.Form-content-caption .playstore:hover{
+    box-shadow: none;
+    background: #000;
+}
+.FootterSection{
+    background: #f7f9ff;
+}
+.FootterSection a{
+    text-decoration: none;
+}
+.FootterSection h3{
+    font-size: 20px;
+}
+.FootterSection span{
+    font-family: 'Charm', cursive;
+}
+
+
+
+/*  end of css  */

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv ul{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.maindiv ul li a{
+    text-decoration: none;
+    color: yellow;
+    background-color: slategray;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* button 1 design part */
+
+.maindiv ul li .a1::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: rgb(70, 74, 80);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: -1;
+}
+.maindiv ul li .a1:hover::before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* button 2 design part */
+
+.maindiv ul li .a2::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgb(70, 74, 80);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: -1;
+}
+.maindiv ul li .a2:hover::before{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* button 3 design part */
+
+.maindiv ul li .a3::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: rgb(70, 74, 80);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: -1;
+}
+.maindiv ul li .a3:hover::before{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* button 4 design part */
+
+.maindiv ul li .a4::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgb(70, 74, 80);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: -1;
+}
+.maindiv ul li .a4:hover::before{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}

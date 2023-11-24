@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    color: red;
+}
+h2::before{
+    content: "'before property- ";
+}
+h2::after{
+    content: "-using after'"
+}
+/* button style start */
+.maindiv{
+    text-align: center;
+    margin: 60px auto;
+}
+.maindiv a{
+    text-decoration: none;
+    background-color: rgb(94, 255, 0);
+    
+    font-size: 30px;
+    padding: 10px 35px;
+    border-radius: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* Button 1 design part */
+
+.maindiv .a1::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: tomato;
+    border-radius: 10px;
+
+    transition: .2s;
+    z-index: -1;
+}
+.maindiv .a1:hover::before{
+    width: 100%;
+}
+
+/* Button 2 design part */
+
+.maindiv .a2::before{
+    content: "";
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: tomato;
+    border-radius: 10px;
+
+    transition: .2s;
+    z-index: -1;
+}
+.maindiv .a2:hover::before{
+    height: 100%;
+}
+
+/* Button 3 design part */
+
+.maindiv .a3::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: tomato;
+    border-radius: 10px;
+
+    transition: .2s;
+    z-index: -1;
+}
+.maindiv .a3:hover::before{
+    width: 100%;
+}
+
+/* Button 4 design part */
+
+.maindiv .a4::before{
+    content: "";
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: tomato;
+    border-radius: 10px;
+
+    transition: .2s;
+    z-index: -1;
+}
+.maindiv .a4:hover::before{
+    height: 100%;
+}
+
+
+
+
+/* List part design using before property */
+
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+ul li{
+    font-size: 30px;
+}
+li::before{
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    color:rgb(94, 255, 0);
+}
+
+li::after{
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    color:rgb(94, 255, 0);
+}

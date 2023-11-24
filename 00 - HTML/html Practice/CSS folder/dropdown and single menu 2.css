@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+    background: rgb(81, 165, 42);
+    cursor: pointer;
+}
+.maindiv ul{
+    text-align: center;
+}
+.maindiv ul li{
+    display: inline-block;
+    padding: 20px 40px;
+    border-right: 1px solid rgb(116, 73, 43);
+    margin-left: -5px;
+
+    position: relative;
+}
+.maindiv ul li:hover{
+    background: rgb(107, 93, 93);
+    transition: .8s;
+}
+.maindiv ul:first-child li{
+    border-left: 1px solid rgb(116, 73, 43);
+}
+.maindiv ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.maindiv ul li ul{
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 200px;
+    background-color: rgb(81, 165, 42);
+    padding-left: 5px;
+    border-top: 1px solid rgb(116, 73, 43);
+
+    /* Animation part */
+    transition: .8s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.maindiv ul li ul li{
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(116, 73, 43);
+}
+/* hover part */
+.maindiv ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.maindiv ul li a:hover, .maindiv ul li ul li a:hover{
+    color: coral;
+}
+
+/* Social menu bar styling start */
+.socialmenu{
+    text-align: center;
+}
+.socialmenu ul{margin-top: 100px;}
+.socialmenu ul li{
+    display: inline-block;
+}
+.socialmenu ul li a{
+    font-size:40px;
+    color: white;
+    background-color: #3d9a3d;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+.socialmenu ul li a:hover{
+    background-color: rgb(72, 104, 72);
+    color:rgb(207, 196, 196);
+    transition: .7s;
+}

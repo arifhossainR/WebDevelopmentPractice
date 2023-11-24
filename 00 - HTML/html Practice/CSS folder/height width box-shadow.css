@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.green{
+    height: 150px;
+    width: 320px;
+    background-color: green;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 8px 8px;
+}
+.red{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+}
+.dimerpani{
+    width: 300px;
+    height: 120px;
+    background-color: rgba(197, 196, 196, 0.726);
+    margin:auto;
+    margin-top: 50px;
+    border: 3px solid rgba(192, 50, 69, 0.493);
+    text-align: center;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 20px 6px 8px rgb(129, 113, 113);
+}
+.kusum{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(250, 246, 6);
+    display: inline-block;
+    border-radius: 50%;
+}

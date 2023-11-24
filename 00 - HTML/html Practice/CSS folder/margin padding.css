@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+h1{
+    color:crimson;
+    background-color: darkkhaki;
+}
+.margiin{
+    color:red;
+    width: 200px;
+    background-color: darkolivegreen;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.paddiing{
+    color: yellow;
+    background-color: rgb(44, 3, 44);
+    display: inline-block;
+    margin-left: 650px;
+    margin-bottom: 100px;
+    padding: 20px 50px;
+}
+.bordeer{
+    color: rgb(62, 13, 238);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    background-color: tan;
+    border:3px solid black;
+
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color:rgb(230, 8, 250);
+    text-decoration: none;
+}
+ul li{
+    font-size: 25px;
+    display: inline-block;
+    background-color: silver;
+    margin-left: -4px;
+    padding: 5px 40px;
+    border: 2px solid rgb(88, 56, 56);
+}
+ul li a:hover{
+    color: rgba(248, 144, 7, 0.589);
+}
+ul li:hover{
+    background-color: rgba(11, 235, 243, 0.966);
+}
+ul{
+    text-align: center;
+}

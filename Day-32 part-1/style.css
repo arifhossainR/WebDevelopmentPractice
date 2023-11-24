@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    width: 43.75rem;
+    height: 37.5rem;
+    border: 3px dashed #f00;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemgula{
+    background: #008000;
+    border: 2px dashed #800080;
+    padding: 0.625rem;
+}

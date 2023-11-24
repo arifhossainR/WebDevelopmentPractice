@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    text-align: center;
+    background: yellow;
+}
+.menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: -4px;
+    position: relative;
+}
+.menu ul li a {
+    font-size: 30px;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rebeccapurple;
+}
+
+.menu ul li ul{
+    position: absolute;
+    left: 23px;
+    top: 100%;
+    width: 170px;
+    background-color: aqua;
+    margin-left: 4px;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+}
+
+.menu ul li:hover ul{
+    background-color: blue;
+    transform: scaleY(1);
+    transition: .8s;
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li a:hover{
+    background-color: darkred;
+}
